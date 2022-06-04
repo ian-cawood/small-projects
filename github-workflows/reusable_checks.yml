@@ -1,0 +1,16 @@
+name: Reusable workflow that echos environment
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+
+jobs:
+  echo_environment:
+    name: Echo the environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo the current environment
+        run: echo ${{ inputs.environment }}

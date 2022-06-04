@@ -1,0 +1,9 @@
+name: Call a reusable workflow
+
+on: [pull_request]
+
+jobs:
+  reusable-checks:
+    uses: ./github-workflows/reusable-checks.yml
+    with:
+      environment: dev
