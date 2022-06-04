@@ -7,6 +7,6 @@ on:
 
 jobs:
   reusable-checks:
-    uses: ./github/workflows/reusable-checks.yml
+    uses: ./github/workflows/reusable-checks.yml@main
     with:
       environment: dev
