@@ -1,6 +1,9 @@
 name: Call a reusable workflow
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - "main"
 
 jobs:
   reusable-checks:
